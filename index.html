@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <link rel="icon" type="image/png" href="assets/logo.png.jpg">
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be Party – Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <img src="assets/logo.png.jpg" alt="Be Party" class="logo">
+      
+    </div>
+    <div class="brand">
+        <h1 id="site-title">Be Party</h1>
+      </div>
+    
+    <nav class="actions">
+      <div class="lang-switch">
+        <button data-lang="fr" class="active">FR</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="ar">AR</button>
+      </div>
+      <a href="cart.html" class="cart-link">
+        <!-- Chic bag icon -->
+        <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" fill="none" stroke-width="2">
+          <path d="M6 2l2 4h8l2-4z"></path>
+          <path d="M3 6h18l-1.5 14H4.5z"></path>
+        </svg>
+        
+        <span id="cartCount">0</span>
+
+      </a>
+    </nav>
+    
+  </header>
+  <nav class="categories" id="categoryList"></nav>
+  <!-- 🔎 Search bar goes HERE -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+  </div>
+  <main class="main">
+    <aside class="sidebar">
+      <h2 id="catTitle"></h2>
+      <div id="catList"></div>
+    </aside>
+
+    <section class="catalog">
+             
+      <div id="productGrid" class="grid"></div>
+    </section>
+  </main>
+  
+
+  <footer class="footer">
+    © Be Party <span id="year"></span> 
+  </footer>
+</body>
+</html>

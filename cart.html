@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/png" href="assets/logo.png.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart – Be Party</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+          <img src="assets/logo.png.jpg" alt="Be Party" class="logo">
+          
+        </div>
+        <div class="brand">
+            <h1 id="site-title"><a href="index.html" style="text-decoration: none; color: inherit;">Be Party</a></h1>
+          </div>
+        
+        <nav class="actions">
+          <div class="lang-switch">
+            <button data-lang="fr" class="active">FR</button>
+            <button data-lang="en">EN</button>
+            <button data-lang="ar">AR</button>
+          </div>
+          <a href="cart.html" class="cart-link">
+            <!-- Chic bag icon -->
+            <svg viewBox="0 0 24 24" width="26" height="26" stroke="currentColor" fill="none" stroke-width="2">
+              <path d="M6 2l2 4h8l2-4z"></path>
+              <path d="M3 6h18l-1.5 14H4.5z"></path>
+            </svg>
+            
+            <span id="cartCount">0</span>
+    
+          </a>
+        </nav>
+        
+      </header>
+      <nav class="categories" id="categoryList"></nav>
+      
+  <main class="main cart-page">
+    <h2 id="cartTitle">Votre panier</h2>
+  
+    <div class="cart-container">
+      <!-- Cart Items Table -->
+      <table id="cartTable" class="cart-table"></table>
+  
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <div class="cart-total">
+          <span id="cartSum">0 TND</span>
+        </div>
+        <a href="checkout.html" class="btn primary" id="proceedBtn">Passer à la caisse</a>
+      </div>
+    </div>
+   <!-- Suggested Products -->
+<section class="suggested-products">
+    <h3>You Might Also Like</h3>
+    <div id="suggestedGrid" class="grid"></div>
+  </section>
+  
+  <!-- Social Proof -->
+<section class="social-proof">
+    <p>Join <strong>500+</strong> happy customers celebrating with Be Party!</p>
+    <div class="stars">★★★★★</div>
+  </section>
+  
+  </main>
+  
+
+  <footer class="footer">© Be Party <span id="year"></span> </footer>
+</body>
+</html>
